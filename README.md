@@ -19,6 +19,7 @@
 6. create a schema.sql file in bash
 7. To run schema.sql to create table
     $ psql -d coffeeshop < QUERY.sql
+
 8. To see information of the table
 9.  coffeeshop => \d+ recipes
 
