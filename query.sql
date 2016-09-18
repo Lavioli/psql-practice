@@ -7,3 +7,12 @@ CREATE TABLE if not exists coffeeshop (
 	description text not null
 );
 
+
+--EXPLORE ONE TO FEW RELATIONSHIPS: a single row in the table can have multiple relationship with another table row
+CREATE TABLE if not exists size-price (
+	id serial primary key,
+	size_id integer references coffeeshop,
+	size text not null,
+	price integer not null
+);
+
